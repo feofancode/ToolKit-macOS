@@ -9,8 +9,11 @@
 import Cocoa
 
 
+let storyboard = NSStoryboard(name: "Main", bundle: nil)
+
 class WindowManager: NSObject {
-    var window: NSWindow?
+    
+    lazy var QRWindowController = storyboard.instantiateController(withIdentifier: "QR Window Controller") as? NSWindowController
     
     class var shared: WindowManager {
         struct Static {

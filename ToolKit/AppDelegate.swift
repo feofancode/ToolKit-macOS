@@ -26,12 +26,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     @objc func showQRCodeWindow(_ sender: Any?) {
-        let storyBoard = NSStoryboard(name: "Main", bundle: nil)
-        if let windowController = storyBoard.instantiateController(withIdentifier: "QR Code Window") as? NSWindowController, let window = windowController.window {
-            WindowManager.shared.window = window
-            window.makeKeyAndOrderFront(nil)
+        if let windowController = WindowManager.shared.QRWindowController {
+            windowController.showWindow(self)
+            NSApplication.shared().activate(ignoringOtherApps: true)
         }
-        print("hahaha")
     }
     
     @objc func terminate(_ sender: Any?) {

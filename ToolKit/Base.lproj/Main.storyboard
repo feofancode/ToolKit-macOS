@@ -663,7 +663,7 @@
         <!--Window Controller-->
         <scene sceneID="44I-5M-tZE">
             <objects>
-                <windowController storyboardIdentifier="QR Code Window" id="ORc-hb-Hsp" customClass="QRWindowController" customModule="ToolKit" customModuleProvider="target" sceneMemberID="viewController">
+                <windowController storyboardIdentifier="QR Window Controller" id="ORc-hb-Hsp" sceneMemberID="viewController">
                     <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="h4E-dA-I42">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>

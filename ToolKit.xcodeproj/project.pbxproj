@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3113C3201F74113900F7E082 /* WindowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3113C31F1F74113900F7E082 /* WindowManager.swift */; };
-		3113C3221F74121300F7E082 /* QRWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3113C3211F74121300F7E082 /* QRWindowController.swift */; };
 		318E876A1F72C25A00DEF879 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318E87691F72C25A00DEF879 /* AppDelegate.swift */; };
 		318E876C1F72C25A00DEF879 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318E876B1F72C25A00DEF879 /* ViewController.swift */; };
 		318E876E1F72C25A00DEF879 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 318E876D1F72C25A00DEF879 /* Assets.xcassets */; };
@@ -17,7 +16,6 @@
 
 /* Begin PBXFileReference section */
 		3113C31F1F74113900F7E082 /* WindowManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowManager.swift; sourceTree = "<group>"; };
-		3113C3211F74121300F7E082 /* QRWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRWindowController.swift; sourceTree = "<group>"; };
 		318E87661F72C25A00DEF879 /* ToolKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToolKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		318E87691F72C25A00DEF879 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		318E876B1F72C25A00DEF879 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,7 +60,6 @@
 				318E876F1F72C25A00DEF879 /* Main.storyboard */,
 				318E87721F72C25A00DEF879 /* Info.plist */,
 				3113C31F1F74113900F7E082 /* WindowManager.swift */,
-				3113C3211F74121300F7E082 /* QRWindowController.swift */,
 			);
 			path = ToolKit;
 			sourceTree = "<group>";
@@ -141,7 +138,6 @@
 			files = (
 				318E876C1F72C25A00DEF879 /* ViewController.swift in Sources */,
 				318E876A1F72C25A00DEF879 /* AppDelegate.swift in Sources */,
-				3113C3221F74121300F7E082 /* QRWindowController.swift in Sources */,
 				3113C3201F74113900F7E082 /* WindowManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
