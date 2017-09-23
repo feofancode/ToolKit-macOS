@@ -664,10 +664,10 @@
         <scene sceneID="44I-5M-tZE">
             <objects>
                 <windowController storyboardIdentifier="QR Window Controller" id="ORc-hb-Hsp" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="h4E-dA-I42">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                    <window key="window" title="QR Code Util" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="h4E-dA-I42">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+                        <rect key="contentRect" x="488" y="492" width="558" height="328"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
                         <connections>
                             <outlet property="delegate" destination="ORc-hb-Hsp" id="Ypw-px-szK"/>
@@ -679,20 +679,58 @@
                 </windowController>
                 <customObject id="eKu-dC-BoK" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="236"/>
+            <point key="canvasLocation" x="-68" y="245"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="EsC-Nt-l1F">
             <objects>
-                <viewController id="grF-dG-D4R" customClass="ViewController" customModule="ToolKit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="grF-dG-D4R" customClass="QRViewController" customModule="ToolKit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="OKp-P6-rGL">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="558" height="328"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="86d-EG-rAW">
+                                <rect key="frame" x="176" y="105" width="206" height="206"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" imageFrameStyle="grayBezel" id="gOR-9c-Vty"/>
+                            </imageView>
+                            <scrollView fixedFrame="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LBt-Ra-9ax">
+                                <rect key="frame" x="20" y="20" width="518" height="66"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <clipView key="contentView" ambiguous="YES" id="mlw-CO-84N">
+                                    <rect key="frame" x="1" y="1" width="516" height="64"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textView ambiguous="YES" importsGraphics="NO" richText="NO" verticallyResizable="YES" continuousSpellChecking="YES" allowsUndo="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="NPs-N6-GCm">
+                                            <rect key="frame" x="0.0" y="0.0" width="516" height="64"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <size key="minSize" width="516" height="64"/>
+                                            <size key="maxSize" width="516" height="10000000"/>
+                                            <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                        </textView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </clipView>
+                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="aWU-bN-X46">
+                                    <rect key="frame" x="-100" y="-100" width="87" height="18"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="Xl6-3C-eKi">
+                                    <rect key="frame" x="501" y="1" width="16" height="64"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                        </subviews>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="86d-EG-rAW" id="uMH-er-Ij4"/>
+                        <outlet property="textView" destination="NPs-N6-GCm" id="vk3-KR-G7Z"/>
+                    </connections>
                 </viewController>
                 <customObject id="6XD-o0-4kk" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="782" y="211"/>
+            <point key="canvasLocation" x="-68" y="751"/>
         </scene>
     </scenes>
 </document>

@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		3113C3201F74113900F7E082 /* WindowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3113C31F1F74113900F7E082 /* WindowManager.swift */; };
+		31791C931F75D17C00814743 /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31791C921F75D17C00814743 /* QRViewController.swift */; };
+		31791C951F75D39C00814743 /* QRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31791C941F75D39C00814743 /* QRCode.swift */; };
 		318E876A1F72C25A00DEF879 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318E87691F72C25A00DEF879 /* AppDelegate.swift */; };
-		318E876C1F72C25A00DEF879 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318E876B1F72C25A00DEF879 /* ViewController.swift */; };
 		318E876E1F72C25A00DEF879 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 318E876D1F72C25A00DEF879 /* Assets.xcassets */; };
 		318E87711F72C25A00DEF879 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 318E876F1F72C25A00DEF879 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3113C31F1F74113900F7E082 /* WindowManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowManager.swift; sourceTree = "<group>"; };
+		31791C921F75D17C00814743 /* QRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
+		31791C941F75D39C00814743 /* QRCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCode.swift; sourceTree = "<group>"; };
 		318E87661F72C25A00DEF879 /* ToolKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToolKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		318E87691F72C25A00DEF879 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		318E876B1F72C25A00DEF879 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		318E876D1F72C25A00DEF879 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		318E87701F72C25A00DEF879 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		318E87721F72C25A00DEF879 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -35,6 +37,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3113C3271F75635400F7E082 /* QR */ = {
+			isa = PBXGroup;
+			children = (
+				31791C921F75D17C00814743 /* QRViewController.swift */,
+				31791C941F75D39C00814743 /* QRCode.swift */,
+			);
+			path = QR;
+			sourceTree = "<group>";
+		};
 		318E875D1F72C25A00DEF879 = {
 			isa = PBXGroup;
 			children = (
@@ -54,12 +65,12 @@
 		318E87681F72C25A00DEF879 /* ToolKit */ = {
 			isa = PBXGroup;
 			children = (
+				3113C3271F75635400F7E082 /* QR */,
 				318E87691F72C25A00DEF879 /* AppDelegate.swift */,
-				318E876B1F72C25A00DEF879 /* ViewController.swift */,
+				3113C31F1F74113900F7E082 /* WindowManager.swift */,
 				318E876D1F72C25A00DEF879 /* Assets.xcassets */,
 				318E876F1F72C25A00DEF879 /* Main.storyboard */,
 				318E87721F72C25A00DEF879 /* Info.plist */,
-				3113C31F1F74113900F7E082 /* WindowManager.swift */,
 			);
 			path = ToolKit;
 			sourceTree = "<group>";
@@ -91,7 +102,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = Franky;
 				TargetAttributes = {
 					318E87651F72C25A00DEF879 = {
@@ -136,9 +147,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				318E876C1F72C25A00DEF879 /* ViewController.swift in Sources */,
 				318E876A1F72C25A00DEF879 /* AppDelegate.swift in Sources */,
+				31791C951F75D39C00814743 /* QRCode.swift in Sources */,
 				3113C3201F74113900F7E082 /* WindowManager.swift in Sources */,
+				31791C931F75D17C00814743 /* QRViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,7 +178,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -174,7 +188,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -216,7 +234,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -224,7 +244,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
