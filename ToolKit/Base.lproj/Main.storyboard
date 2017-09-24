@@ -698,15 +698,15 @@
                                 <rect key="frame" x="20" y="20" width="518" height="66"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <clipView key="contentView" ambiguous="YES" id="mlw-CO-84N">
-                                    <rect key="frame" x="1" y="1" width="516" height="64"/>
+                                    <rect key="frame" x="1" y="1" width="501" height="64"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textView ambiguous="YES" importsGraphics="NO" richText="NO" verticallyResizable="YES" continuousSpellChecking="YES" allowsUndo="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="NPs-N6-GCm">
-                                            <rect key="frame" x="0.0" y="0.0" width="516" height="64"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="501" height="64"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <size key="minSize" width="516" height="64"/>
-                                            <size key="maxSize" width="516" height="10000000"/>
+                                            <size key="minSize" width="501" height="64"/>
+                                            <size key="maxSize" width="518" height="10000000"/>
                                             <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                         </textView>
                                     </subviews>
@@ -717,7 +717,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="Xl6-3C-eKi">
-                                    <rect key="frame" x="501" y="1" width="16" height="64"/>
+                                    <rect key="frame" x="502" y="1" width="15" height="64"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>

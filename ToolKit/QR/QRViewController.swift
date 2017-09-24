@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class QRViewController: NSViewController {
+class QRViewController: NSViewController, NSTextViewDelegate {
 
     @IBOutlet var textView: NSTextView!
     @IBOutlet weak var imageView: NSImageView!
@@ -16,10 +16,12 @@ class QRViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         textView.font = NSFont(name: "Menlo", size: 16)
-//        textView.textStorage?.font = NSFont(name: "Menlo", size: 16)
+        textView.delegate = self
     }
-    @IBAction func generateButtonClicked(_ sender: Any) {
+    
+    func textDidChange(_ notification: Notification) {
         if let string = textView.string {
+            print(string)
             if let image = QRCode(string: string)?.image {
                 imageView.image = image
             }
