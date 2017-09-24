@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3113C3201F74113900F7E082 /* WindowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3113C31F1F74113900F7E082 /* WindowManager.swift */; };
+		3153D83F1F7759610036105A /* EncodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3153D83E1F7759610036105A /* EncodeViewController.swift */; };
 		31791C931F75D17C00814743 /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31791C921F75D17C00814743 /* QRViewController.swift */; };
 		31791C951F75D39C00814743 /* QRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31791C941F75D39C00814743 /* QRCode.swift */; };
 		318E876A1F72C25A00DEF879 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318E87691F72C25A00DEF879 /* AppDelegate.swift */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		3113C31F1F74113900F7E082 /* WindowManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowManager.swift; sourceTree = "<group>"; };
+		3153D83E1F7759610036105A /* EncodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodeViewController.swift; sourceTree = "<group>"; };
 		31791C921F75D17C00814743 /* QRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
 		31791C941F75D39C00814743 /* QRCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCode.swift; sourceTree = "<group>"; };
 		318E87661F72C25A00DEF879 /* ToolKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToolKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +48,14 @@
 			path = QR;
 			sourceTree = "<group>";
 		};
+		3153D83D1F77594A0036105A /* Encode */ = {
+			isa = PBXGroup;
+			children = (
+				3153D83E1F7759610036105A /* EncodeViewController.swift */,
+			);
+			path = Encode;
+			sourceTree = "<group>";
+		};
 		318E875D1F72C25A00DEF879 = {
 			isa = PBXGroup;
 			children = (
@@ -65,6 +75,7 @@
 		318E87681F72C25A00DEF879 /* ToolKit */ = {
 			isa = PBXGroup;
 			children = (
+				3153D83D1F77594A0036105A /* Encode */,
 				3113C3271F75635400F7E082 /* QR */,
 				318E87691F72C25A00DEF879 /* AppDelegate.swift */,
 				3113C31F1F74113900F7E082 /* WindowManager.swift */,
@@ -150,6 +161,7 @@
 				318E876A1F72C25A00DEF879 /* AppDelegate.swift in Sources */,
 				31791C951F75D39C00814743 /* QRCode.swift in Sources */,
 				3113C3201F74113900F7E082 /* WindowManager.swift in Sources */,
+				3153D83F1F7759610036105A /* EncodeViewController.swift in Sources */,
 				31791C931F75D17C00814743 /* QRViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
